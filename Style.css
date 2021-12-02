@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@100&family=Sarpanch:wght@400;600&display=swap');
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sarpanch', sans-serif;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 550PX; 
+    height: 300PX;
+    position:absolute;
+    left: 28%;
+    top: 25%;
+    background: #C1A372;
+    border-radius: 20px;    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+.nbr{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    background: rgba(4, 4, 9, 0.56);
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: large;
+}
+.txt{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20PX;
+}
+#btn{
+    margin-top: 20px;
+    position: absolute;
+    left: 350px;
+    width: 140px;
+    height: 50px;
+    background: #314D63;
+    border: none;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sarpanch', sans-serif;   
+}
+
+#btn:hover{
+    background: #496c86;
+    cursor: pointer;
+}
+#userInput{
+    border: none;
+    border-radius: 10px;
+    height: 30PX;
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    margin-left: 50px;
+}
+#outputTxt{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.img{
+    position: absolute;
+    left: 355px;
+    top: 114px;
+    width: 130px;
+}
+/* ///////Play//////// */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@100&family=Rubik:wght@300&family=Sarpanch:wght@400;600&display=swap');
+.boxPlay{
+    display: flex;
+    flex-direction: column;
+    width: 550PX; 
+    height: 400PX;
+    position:absolute;
+    left: 28%;
+    top: 20%;
+    background: #C1A372;
+    border-radius: 20px;    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#btnPlay{
+    position: absolute;
+    left: 186px;
+    top: 164PX;
+    width: 170px;
+    height: 55px;
+    background: #314D63;
+    border: none;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sarpanch', sans-serif;  
+    font-size: large; 
+}
+#btnPlay:hover{
+    background: #496c86;
+    cursor: pointer;
+}
+.imgPlay{
+    position: absolute;
+    left: 197px;
+    top: 39PX;
+    width: 130px;
+}
+.paragraph{
+    position: absolute;
+    top:224PX;
+    left: 90PX;
+    right: 90PX;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+/* ///////Game Over//////// */
+#over{
+    display: none;
+}
+#btnOver{
+    position: absolute;
+    left: 186px;
+    top: 200px;
+    width: 170px;
+    height: 55px;
+    background: #314D63;
+    border: none;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sarpanch', sans-serif;  
+    font-size: large; 
+}
+#btnOver:hover{
+    background: #496c86;
+    cursor: pointer;
+}
+.imgOver{
+    position: absolute;
+    left: 197px;
+    top: 100PX;
+    width: 130px;
+}
+.title{
+    position: absolute;
+    top: 20px;
+    left: 185px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+/* ///////win//////// */
+#win{
+    display: none;
+}

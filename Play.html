@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="box" id="box">
+    <div class="box_Game">
+      <div class="nbr">
+        <p><span id="numbr">10</span>/10</p>
+        <img  src="heart-30.png"/>
+      </div>     
+        <p class="txt"><b>Guess a number between 1 and 100</b></p>
+        <div class="">
+        <p id="outputTxt">Enter a number below :</p>
+        <input id="userInput" ><br>
+        <img class="img" src="btnImg.png"/>
+        <button id="btn">I think</button>
+      </div>
+    </div>
+  </div>
+  <div class="box" id="over">
+    <div class="box_Game">
+        <p class="title">GAME OVER</p>
+        <img class="imgOver"src="gameOver.gif"/>
+        <a href="Play.html"><button id="btnOver" >Replay</button></a>
+    </div>
+  </div>
+  <div class="box" id="win">
+    <div class="box_Game">
+        <p class="title">YOU WIN !</p>
+        <img class="imgOver"src="win.gif"/>
+        <a href="Play.html"><button id="btnOver" >Replay</button></a>
+    </div>
+  </div>
+ 
+  <script>
+    var enterButton = document.getElementById('enterButton');
+    var output = document.getElementById('outputTxt');
+    var remiaing=document.getElementById("numbr");
+    var randomNumber = Math.floor(Math.random()*100)+1;
+    var nbr=10;
+    console.log(randomNumber);
+    function random(){
+      var input = document.getElementById('userInput').value;
+      if(input == randomNumber){
+        if(nbr==1 || nbr==2)
+        {
+          output.innerHTML="You guessed right (you are very smart)  "+ ", "+ " it was  "+ randomNumber;
+          document.getElementById('box').style.display="none";
+          document.getElementById('win').style.display="block";
+        }
+        else{
+          output.innerHTML="You guessed right"+ ", "+ " it was  "+ randomNumber; 
+          document.getElementById('box').style.display="none";
+          document.getElementById('win').style.display="block";
+        }      
+      }
+      else if(input>randomNumber && input<=100){
+        output.innerHTML="You guessed too high";
+        nbr--;
+        remiaing.innerHTML=nbr;
+      }
+      else if(input<randomNumber && input>1){
+        output.innerHTML="You guessed too low";
+        nbr--;
+        remiaing.innerHTML=nbr;
+      }
+      else if(input<1){
+        output.innerHTML="Higher, it has to be between 1 and 100";
+      }
+      else if(isNaN(input)){
+        output.innerHTML="That's not a number!";
+      }
+      else{
+        output.innerHTML="Lowe, it has to be between 1 and 100";
+      }
+      if(nbr==0){
+        output.innerHTML="GAME OVER";
+        document.getElementById('box').style.display="none";
+        nbr=10;
+        remiaing.innerHTML=nbr;
+        document.getElementById('over').style.display="block";
+      }   
+    }
+    btn.addEventListener('click', random);
+   
+    
+  </script>
+</body>
+</html>
