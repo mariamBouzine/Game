@@ -161,3 +161,10 @@ body{
 #smart{
     display: none;
 }
+.tit{
+    position: absolute;
+    top: 20px;
+    left: 113px;
+    font-size: xx-large;
+    font-weight: 600;
+}

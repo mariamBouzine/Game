@@ -16,7 +16,7 @@
         <img  src="heart-30.png"/>
       </div>     
         <p class="txt"><b>Guess a number between 1 and 100</b></p>
-        <div class="">
+      <div class="">
         <p id="outputTxt">Enter a number below :</p>
         <input id="userInput" ><br>
         <img class="img" src="btnImg.png"/>
@@ -29,7 +29,7 @@
         <p class="title">GAME OVER</p>
         <img class="imgOver"src="gameOver.gif"/>
         <a href="Play.html"><button id="btnOver" >Replay</button></a>
-    </div>
+  </div>
   </div>
   <div class="box" id="win">
     <div class="box_Game">
@@ -38,9 +38,9 @@
         <a href="Play.html"><button id="btnOver" >Replay</button></a>
     </div>
   </div>
-  <div class="box" id=" smart">
+  <div class="box" id="smart">
     <div class="box_Game">
-        <p class="title">you are very smart</p>
+        <p class="tit">you are very smart</p>
         <img class="imgOver"src="win.gif"/>
         <a href="Play.html"><button id="btnOver" >Replay</button></a>
     </div>
@@ -59,8 +59,8 @@
         if(nbr==10 || nbr==9)
         {
           output.innerHTML="You guessed right (you are very smart)  "+ ", "+ " it was  "+ randomNumber;
-          document.getElementById('box').style.display="none";
-          document.getElementById('smart').style.display="block";
+           document.getElementById('box').style.display="none";
+           document.getElementById('smart').style.display="block";
         }
         else{
           output.innerHTML="You guessed right"+ ", "+ " it was  "+ randomNumber; 
