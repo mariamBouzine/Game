@@ -37,6 +37,13 @@
         <img class="imgOver"src="win.gif"/>
         <a href="Play.html"><button id="btnOver" >Replay</button></a>
     </div>
+    <div class="box" id=" smart">
+    <div class="box_Game">
+        <p class="title">you are smart</p>
+        <img class="imgOver"src="win.gif"/>
+        <a href="Play.html"><button id="btnOver" >Replay</button></a>
+    </div>
+  </div>
   </div>
  
   <script>
@@ -53,7 +60,7 @@
         {
           output.innerHTML="You guessed right (you are very smart)  "+ ", "+ " it was  "+ randomNumber;
 //           document.getElementById('box').style.display="none";
-//           document.getElementById('win').style.display="block";
+          document.getElementById('smart').style.display="block";
         }
         else{
           output.innerHTML="You guessed right"+ ", "+ " it was  "+ randomNumber; 
